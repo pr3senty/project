@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuestFinishActivity"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/good_ending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="#8BC34A"
+                android:fontFamily="@font/teletwodisplayserif_bold"
+                android:padding="8dp"
+                android:text="Хороший исход"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bad_ending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="#F44336"
+                android:fontFamily="@font/teletwodisplayserif_bold"
+                android:padding="8dp"
+                android:text="Неблагоприятный исход"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/quest_finish_extra"
+                android:layout_width="wrap_content"
+                android:scrollbars="vertical"
+                android:maxLines="10"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/teletwotextsans_regular"
+                android:text="Спустя пару дней ему надо было сходить до магазина и купить футболку. Он взял деньги и отправился до магазина. По пути он встретил друзей, которые предложили ему погулять. Он согласился. Во время прогулки у него случайно выпали деньги, и он их не заметил. Когда он распрощался с друзьями и пошёл в магазин, он понял, что денег в кармане нет. Он сильно расстроился и решил, что никогда больше не будет так делать."
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/teletwodisplayserif_bold"
+                android:text="Вы успешно завершили квест на одну из концовок"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/teletwodisplayserif_bold"
+                    android:text="Ваша награда: "
+                    android:textColor="@color/black"
+                    android:textSize="26dp" />
+
+                <TextView
+
+                    android:id="@+id/quest_finish_award"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:fontFamily="@font/teletwodisplayserif_bold"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="26dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/teletwodisplayserif_bold"
+                    android:text="балл(-ов)"
+                    android:textColor="@color/black"
+                    android:textSize="26dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/quest_finish_back_to_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#000000"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/teletwotextsans_bold"
+                android:text="Назад в меню" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

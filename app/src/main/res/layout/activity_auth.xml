@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/auth"
+        android:adjustViewBounds="true"/>
+
+    <EditText
+        android:id="@+id/auth_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:fontFamily="@font/teletwodisplayserif_regular"
+        android:hint="Почта"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <EditText
+        android:id="@+id/auth_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:fontFamily="@font/teletwodisplayserif_regular"
+
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_email" />
+
+    <ImageView
+        android:id="@+id/auth_enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_password"
+        app:srcCompat="@drawable/next_btn" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="211dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/teletwotextsans_bold"
+        android:gravity="center_vertical"
+        android:text="Нет аккаунта? Зарегистрируйся!"
+        android:textSize="18dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_password" />
+
+    <Button
+        android:id="@+id/auth_create_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать"
+        app:layout_constraintHorizontal_bias="0"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

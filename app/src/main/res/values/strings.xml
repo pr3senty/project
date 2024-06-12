@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BrainyBits</string>
+
+    <string name="hint1">Login</string>
+    <string name="hint2">Email</string>
+    <string name="hint3">Password</string>
+    <string name="Netaccounta">Do not have an account?</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Create">Create</string>
+    <string name="Login">Log in</string>
+    <string name="SuccessfulAuth">Login successful</string>
+    <string name="LoginError">Login Error:</string>
+    <string name="Yestaccounta">Do you have an account?</string>
+    <string name="Createacc">Create\naccount</string>
+    <string name="AccountCreated">The account was successfully created</string>
+    <string name="CreatedError">Created Error:</string>
+    <string name="ErrorStandart">Something went wrong</string>
+    <string name="panda">Панда Тодд</string>
+    <string name="cat">Кот Симба</string>
+    <string name="rabbit">Заяц Яшка</string>
+
+    <string name="diff1">Простая</string>
+    <string name="diff2">Средняя</string>
+    <string name="diff3">Сложная</string>
+</resources>

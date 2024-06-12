@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- creation of animation list-->
+    <item
+        android:drawable="@drawable/angry"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/chill"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/excited"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/happy"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/sad"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/scared"
+        android:duration="100" />
+
+</animation-list>
