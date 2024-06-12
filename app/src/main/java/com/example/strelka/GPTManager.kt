@@ -54,6 +54,8 @@ class GPTManager(context: Context) : ViewModel()
 
                 val json = JSONArray(messages)
 
+                Thread.sleep(1000)
+
                 val response = gptModule.callAttr("get_gpt_response_by_query", json.toString())
 
                 val gptAnswer = JSONObject(
@@ -94,6 +96,8 @@ class GPTManager(context: Context) : ViewModel()
 
                 val json = JSONArray(messages)
 
+                Thread.sleep(1000)
+
                 val response = gptModule.callAttr("get_gpt_response_by_query", json.toString())
 
                 val gptAnswer = JSONObject(
@@ -104,12 +108,7 @@ class GPTManager(context: Context) : ViewModel()
                 ).get("text").toString()
 
 
-                if (gptAnswer.lowercase().substring(0, 2) == "да") {
-                    Thread.sleep(5000)
-                    return@withContext true
-                }
-
-                return@withContext false
+                return@withContext gptAnswer.lowercase().substring(0, 2) == "да"
             }
 
             getCheckAnswer.invoke(out)
